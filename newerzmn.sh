@@ -1,14 +1,6 @@
 #!/bin/bash
 clear
 sleep 1
-if [ -e geterzinfo.json ]
-then
-	echo " "
-	echo "Script running already?"
-	echo " "
-
-else
-echo "blah" > geterzinfo.json
 
 THISHOST=$(hostname -s)
 
@@ -93,7 +85,6 @@ done
 
 ###########################
 
-rm mnerzsync.json
 
 echo " "
 echo " "
@@ -117,6 +108,3 @@ echo " "
 echo "       Thanks for using MadStu's Install Script"
 echo " "
 
-rm geterzinfo.json
-
-fi
