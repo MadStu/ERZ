@@ -64,23 +64,37 @@ wget -O erz.sh https://git.io/fbjHt && sh erz.sh
 
 At the end it'll tell you your masternode key which you'll need to copy and paste into your windows wallet masternode configuration file.
 
-While this is running it's a good idea to now follow step 6 below.
+
+## 6. Configure Windows wallet
+
+Once the 8000 coins you sent earlier has 15 confirmations, you can grab your Transaction ID and VOUT.
+Go to the debug console and type:
+
+```
+masternode outputs
+```
+
+You'll see something like this:
+
+```
+"txhash" : "f90eaujc198869319fd2f0ed30c8e3b681d49bc1ebf3108baa2d12b69dc11ae6",
+"outputidx" : 0
+```
+
+The first part is your TxHash - the second part is your Output Index.
+Now add your masternode by entering the "Masternodes" tab and clicking the "Create..." button.
+
+A window will popup where you'll need to fill in all the details from what the script provided and what you got from the masternode outputs.
+
+Close and restart the wallet.
 
 
+## 7. Start your Masternode
+
+Then start it by going to the masternode tab, clicking on your masternode and choosing to "Start".
 
 
-
-
-
-
-
-
-...
-
-
-
-
-
+***
 
 
 # Donations
