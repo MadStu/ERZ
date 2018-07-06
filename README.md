@@ -68,47 +68,19 @@ While this is running it's a good idea to now follow step 6 below.
 
 
 
-## 6. Configure Windows wallet
-
-Once the 8000 coins you sent earlier has 15 confirmations, you can grab your Transaction ID and VOUT.
-Go to the debug console and type:
-
-```
-masternode outputs
-```
-
-You'll see something like this:
-
-```
-"txhash" : "f90eaujc198869319fd2f0ed30c8e3b681d49bc1ebf3108baa2d12b69dc11ae6",
-"outputidx" : 0
-```
-
-The first part is your TX_ID - the second part is your VOUT.
-Now open up the masternode configuration file by clicking Tools -> Open Masternode Configuration File. 
-Under all #'s put a new line which consists of the following data:
-
-```
-MN_NAME MN_PUBLIC_IP:7748 MN_KEY TX_ID VOUT
-```
-
-Save and close the file.
-
-Close and restart the wallet.
 
 
 
-## 7. Start your Masternode
-
-WAIT until the script has finished running. 
-
-Then start it by going to the masternode tab, right clicking on your masternode and choosing to "Start Alias".
-
-It can take up to 30 minutes or more before you see the status change from PRE_ENABLED to ENABLED.
 
 
 
-***
+
+...
+
+
+
+
+
 
 
 # Donations
