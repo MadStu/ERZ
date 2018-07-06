@@ -102,9 +102,11 @@ echo " "
 sleep 2
 echo "=================================="
 echo " "
-echo "Your masternode.conf should look like:"
+echo "Your masternode creation in qt wallet should start with:"
 echo " "
-echo "MNxx $EXIP:7748 $MKEY TXID VOUT"
+echo "    Alias* : $THISHOST"
+echo "  Address* : $EXIP:7748"
+echo "  PrivKey* : $MKEY"
 echo " "
 echo "=================================="
 echo " "
@@ -112,12 +114,9 @@ echo " "
 echo " "
 sleep 3
 echo " "
-echo "  - You can now Start Alias in the windows wallet!"
-echo " "
 echo "       Thanks for using MadStu's Install Script"
 echo " "
 
 rm geterzinfo.json
-cp ~/.EarnzCoin/masternode.conf ~/backup/masternode.conf
 
 fi
