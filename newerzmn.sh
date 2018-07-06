@@ -54,7 +54,6 @@ echo "Indexing blockchain..."
 
 sleep 1
 rm ~/.EarnzCoin/mncache.dat
-rm ~/.EarnzCoin/mnpayments.dat
 sleep 1
 ~/EarnzCoin/EarnzCoind -daemon -reindex
 sleep 60
